@@ -1,6 +1,6 @@
 var express = require('express'),
-    app = express(),
-    engines = require('consolidate');
+    app = express(), //Web framework to handle routing requests.
+    engines = require('consolidate'); // Templating library adapter for Express
 
 app.engine('html', engines.nunjucks);
 app.set('view engine', 'html');
